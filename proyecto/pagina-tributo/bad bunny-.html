@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="lni lni-github-original" rel="stylesheet">
+    <title>mi primera pagina</title>
+  <style>
+     html, body {
+
+         display: flex;
+         flex-direction: column;
+         height: 100%;
+       }
+        body {
+         margin: 0;
+         font-family:  sans-serif;
+         background: #d5dfe8;
+         color: #111212;
+       }
+
+       #header {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       
+        }
+      #main-content-container {
+            display: flex;
+            flex-direction: row;
+            align-items: left;
+       }
+       #links-sidebar {
+          width: 20%;
+          background: #9fccf5;
+       }
+       #main-content {
+      
+       }
+
+       #navigation-bar li {
+        display: inline-block;
+       }
+
+       #navigation-bar ul {
+        margin: 0;
+        padding: 0;
+        border: 1px solid rgb(216, 148, 140);
+        background-color: rgb(120, 197, 197);
+       }
+       #navigation-bar li a {
+        display: block;
+        color: rgb(243, 204, 200);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+       }
+       #navigation-bar li a:hover:not(.active) {
+        background-color: #4374a1;
+       }
+
+       #navigation-bar li a.active {
+        color: #8aa6c0;
+        background-color: #b4c9db;
+       }
+
+       #navagation-bar .menu__hamburger-icon {
+        display: none;
+       }
+        @media screen and (max-width: 600px) {
+            #navigation-bar .menu__hamburger-icon
+            display: block;
+            float: right;
+        }
+        @media screen and (max-width: 600px) {
+            #navigation-bar li:not(:first-child):not(.menu__hamburger-icon) {
+            display:none;
+            }
+
+            #navigation-bar .menu__hamburger-icon {
+            display: block;
+            float: right;
+        }
+    }
+       .social__networks {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        }
+
+       .social__networks {
+        display: flex;
+        align-items: center;
+        }
+
+        .social__icon {
+            font-size: 32px;
+        }
+
+        .social__icon-handler {
+            margin-left: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            text-decoration: underline;
+         text-underline-offset: 3px;
+        }
+
+       .benito {
+         width: 100%;
+       }
+
+       #footer {
+          padding: 0 20px 20px 20px;
+          margin-top: auto;
+          display: flex;
+          background: #8bbdf0;
+       }
+       
+       .footer__section {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+       }
+
+       input [type=email], textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 3px solid #7f8a94;
+        transition: 0.5s;
+        outline: none;
+       }
+
+       input[type=email]:focus, textarea {
+        border:3px solid plum;
+       }
+
+       input[type=submit] {
+        background: powderblue;
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+       }
+    </style>
+</head>
+<body>
+<header id="header">
+   <h1>BAD BUNNY</h1>
+   <p>10 marzo 1994<p>
+</header>
+
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li> <a href="#">Pagina 2</a></li>
+        <li> <a href="#">Pagina 3</a></li>
+        <li class="menu__hamburger-icon">
+            <a>
+                <i class="lni lni-radio-button"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+
+<div  id="main-content-container">
+  <aside id="links-sidebar">
+   Links relacionados
+  </aside>
+  <section id="main-content">
+
+    <img src="bad-bunny.jpg" alt="benito" class="benito"/>
+    <h2>BIOGRAFIA</h2>
+    <p>Benito Antonio Martínez Ocasio (10 de marzo de 1994), conocido artísticamente como Bad Bunny o Benito, es un rapero, cantante, compositor y actor puertorriqueño</p>
+     <p>Empezó a ganar popularidad en SoundCloud y eventualmente firmó un contrato con un sello discográfico mientras trabajaba como empaquetador en un supermercado y estudiaba en la Universidad de Puerto Rico en Arecibo. </p>
+       <p>Después del éxito de su sencillo «Soy Peor» en 2016, alcanzó la fama tras colaborar con los artistas Cardi B y Drake en los sencillos «I Like It» y «Mia» que alcanzaron el primer y tercer puesto en la lista 
+          Billboard Hot 100 respectivamente. Su álbum de estudio debut X 100pre (2018) ganó el Grammy Latino por Mejor Álbum de Música Urbana y entró en la lista de los 500 mejores álbumes musicales de todos los tiempos,
+        según la revista Rolling Stone, ocupando el lugar 447</p>
+        <p>A principios del 2020, cantó en el Espectáculo de medio tiempo del Super Bowl LIV junto a Shakira, y se convirtió en el primer artista latino urbano en ser la portada de la revista Rolling Stone.
+             Durante el año, Bad Bunny lanzó su segundo álbum YHLQMDLG (Yo hago lo que me de la gana), un álbum sorpresa recopilatorio Las que no iban a salir, y su tercer álbum de estudio El último tour del mundo, 
+             que se convirtió en el primer álbum completo en español en alcanzar la cima de la lista Billboard 200, y que contuvo el sencillo «Dakiti» que fue número uno en la lista Billboard Global 200.</p>
+          <p>Además, fue el primer artista latino en ser el más reproducido en Spotify durante el año (2020).​ En el 2021 fue parte de WWE.​ En 2021, fue parte de las 100 personas más influyentes del mundo en la revista
+             Time​ y en octubre del mismo año la publicación estadounidense Pitchfork lo incluyó en su lista de los 200 artistas más influyentes de los últimos 25 años.10​</p>
+            <h3>ALBUMS</h3>
+            <p>Su primer álbum de estudio X 100pre se lanzó en la Víspera de Navidad del 2018 poco después de dejar el sello de DJ Luian, Hear This Music.</p>
+             <p> Para su segundo álbum de estudio, lanzó Oasis, un álbum colaborativo de ocho canciones con J Balvin.</p>
+               <p>Su tercer álbum de estudio y segundo en solitario YHLQMDLG a la medianoche del 29 de febrero del 2020, ese mismo año, lanzó el álbum recopilatorio Las que no iban a salir</p>
+                <p>Su cuarto álbum de estudio, y tercero en solitario El último tour del mundo se lanzó el 27 de noviembre del mismo año</p>
+                 <p>Un verano sin ti es el quinto álbum de estudio fue lanzado el 6 de mayo de 2022 por Rimas Entertainment</p>
+   </section>
+
+</div>
+
+<footer id="footer">
+
+    <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+        <div class="social__networks"></div>
+        <span class="social__icon-container"><i class="lni lni-github-original"></i></span>
+        <span class="social__icon-handler"> <a href="https://github.com/vanyamtz" target=_blank > @vanyamtz </a>
+   </div>
+
+<div class="footer__contact-form footer__section">
+    <h2>Contacto</h2>
+    <div>
+        <form>
+            <label for="contactEmail"> Correo electronico:</label>
+            <input id="contactEmail" required type="email" placeholder="Ingresa tu correo">
+
+            <label for="contactMessage"> <br> Mensaje:</label>
+            <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</div>
+<script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+<div class="footer__more-sites footer__section">
+    <h2>Otros sitios</h2>
+</div>
+</footer>
+</body>
+</html>
